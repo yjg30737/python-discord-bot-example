@@ -1,7 +1,8 @@
 import discord
+from discord.ext import commands
 
 
-class MyClient(discord.Client):
+class MyClient(commands.Bot):
     async def on_ready(self):
         print(f'Logged on as {self.user}!')
 
