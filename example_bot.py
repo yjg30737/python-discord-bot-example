@@ -21,5 +21,5 @@ class MyClient(commands.Bot):
 
 intents = discord.Intents.default()
 
-client = MyClient(intents=intents)
+client = MyClient("$", intents=intents)
 client.run('token')
